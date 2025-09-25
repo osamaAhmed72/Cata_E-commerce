@@ -144,3 +144,21 @@ nav{
         display: block;
     }
 }
+
+@media (max-width: 600px){
+    nav{
+        justify-content: space-around !important;
+        position: fixed;
+        width: 100%;
+        padding: 20px 20px;
+        img{
+            width: 100px;
+        }
+    }
+    .containLinks{
+        .menuBar{
+            margin-right: 20px !important;
+        }
+    }
+    
+}

@@ -65,10 +65,10 @@ box-shadow: 10px 10px 54px rgb(70 , 62 , 221 , 0.1);
 }
 @media (max-width: 576px) {
     #Features {
-    justify-content: space-between;
+    justify-content: center;
     }
     #Features .fe-box {
-        width: 155px;
+        width: 185px;
         margin:0 0 15px 0;
     }
 }

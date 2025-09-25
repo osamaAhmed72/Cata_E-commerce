@@ -12,7 +12,7 @@ const Shop = ({cart, setCart}) => {
     <div>
       <div className="titleHeader">
         <BannerTitle
-        text1={'##StayHome'}
+        text1={'#StayHome'}
         text2={'Save More With Coupons & Up To 70% Off!'}
         />
       </div>

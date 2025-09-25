@@ -1,0 +1,19 @@
+.titleHeader{
+    background-image:url('../../assets/ab1.jpg') ;
+    padding: 70px 0;
+    background-position: top;
+}
+
+#PaginationShop{
+    text-align: center;
+    gap: 5px;
+}
+#PaginationShop a {
+    text-decoration: none;
+    background-color: #089178;
+    margin-right: 5px;
+    border-radius: 4px;
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 600;
+}

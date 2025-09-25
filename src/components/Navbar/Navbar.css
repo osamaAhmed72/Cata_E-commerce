@@ -1,0 +1,146 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0 , 0 , 0 , 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0 ;
+    left: 0 ;
+    right: 0;
+}
+.containLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    .menuBar{
+        font-size: 32px;
+        cursor: pointer;
+        display: none;
+    }
+    .cartIcon{
+        font-size: 28px;
+        color: #085381;
+        text-decoration: none;
+    }
+    .cartIcon:hover,
+    .cartIcon.active{
+        color: #088178;
+        padding-bottom: 5px ;
+        border-bottom:2px solid #088178;
+    }
+}
+.containLinks .navLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.3s ease;
+        }
+        a:hover,
+        a.active{
+            color: #088178;
+        }
+        a.active::after,
+        a:hover::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #088178 ;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+            border-radius: 50%;
+        }
+    }
+    
+}
+.sideNav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #e3e6f3;
+    transition: all 0.3s;
+    width: 0;
+    z-index: 1000;
+}
+.sideNav.showSideBar{
+    width: 250px;
+}
+.sideLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+        transition: 0.3s ease;
+        padding: 5px 0;
+    }
+    a:hover,
+    a.active{
+        color: #088178;
+    }
+    a.active::after,
+    a:hover::after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: #088178 ;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+        border-radius: 50%;
+    }
+}
+.closeSidebar{
+    cursor: pointer;
+    font-size: 28px;
+}
+.cartIcon .pos{
+    position: relative;
+}
+.cartIcon .pos p{
+    position: absolute;
+    top: -18px;
+    right: 0;
+    font-size: 14px;
+    font-weight: 900;
+    color: #bc8d00;
+    padding: 4px;
+
+}
+
+@media (max-width: 768px){
+    .hidLinkSmallScreen{
+        display: none;
+        visibility: hidden;
+    }
+    .containLinks .menuBar{
+        display: block;
+    }
+    nav{
+        width: 100%;
+        padding: 20px 50px;
+    }
+    .sideNav{
+        display: block;
+    }
+}
